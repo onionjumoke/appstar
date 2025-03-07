@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  <title>Appst.ar</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Helvetica, Arial, sans-serif;
+      background-color: #eeeeee;
+      color: #333;
+      -webkit-text-size-adjust: none;
+    }
+    
+    .header {
+      background-color: #2d2d2d;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#8a8a8a), to(#2d2d2d));
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 20px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 #000000;
+      border-bottom: 1px solid #000;
+    }
+    
+    .banner {
+      width: 100%;
+      height: 150px;
+      background-color: #8B0000;
+      display: block;
+    }
+    
+    .section-title {
+      background-color: #dedede;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#dedede));
+      padding: 10px;
+      margin: 0;
+      font-size: 18px;
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #b1b1b1;
+      font-weight: bold;
+      text-shadow: 0 1px 0 #ffffff;
+    }
+    
+    .app-row {
+      overflow-x: scroll;
+      -webkit-overflow-scrolling: touch;
+      white-space: nowrap;
+      padding: 10px 0;
+      background-color: #f6f6f6;
+      border-bottom: 1px solid #d0d0d0;
+      -webkit-box-shadow: inset 0 1px 0 #fff;
+    }
+    
+    .app {
+      display: inline-block;
+      width: 80px;
+      margin: 0 10px;
+      text-align: center;
+      vertical-align: top;
+    }
+    
+    .app-icon {
+      width: 60px;
+      height: 60px;
+      -webkit-border-radius: 12px;
+      margin: 0 auto;
+      position: relative;
+      -webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+      border: 1px solid #333;
+      overflow: hidden;
+    }
+    
+    .app-icon img {
+      width: 60px;
+      height: 60px;
+      -webkit-border-radius: 11px;
+    }
+    
+    .app-name {
+      font-size: 12px;
+      color: #333;
+      margin: 5px 0 2px 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-shadow: 0 1px 0 white;
+    }
+    
+    .app-price {
+      font-size: 11px;
+      color: #999;
+      text-shadow: 0 1px 0 white;
+    }
+    
+    .nav-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      background-color: #222;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#444), to(#222));
+      text-align: center;
+      border-top: 1px solid #666;
+    }
+    
+    .apps-button {
+      display: inline-block;
+      margin-top: 8px;
+      text-align: center;
+      text-decoration: none;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+    
+    .apps-icon {
+      width: 30px;
+      height: 30px;
+      display: block;
+      margin: 5px auto 0;
+      -webkit-border-radius: 6px;
+      overflow: hidden;
+    }
+    
+    .apps-icon img {
+      width: 30px;
+      height: 30px;
+    }
+    
+    .apps-label {
+      color: white;
+      font-size: 11px;
+      margin-top: 1px;
+      text-shadow: 0 -1px 0 #000000;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">Appst.ar</div>
+  
+  <img class="banner" src="/api/placeholder/400/150" alt="App Store Banner">
+  
+  <h2 class="section-title">New</h2>
+  <div class="app-row">
+    <!-- App 1 -->
+    <div class="app">
+      <a href="#app1" style="text-decoration: none;">
+        <div class="app-icon">
+          <img src="/api/placeholder/60/60" alt="App Icon">
+        </div>
+        <div class="app-name">app name</div>
+        <div class="app-price">FREE</div>
+      </a>
+    </div>
+    
+    <!-- App 2 -->
+    <div class="app">
+      <a href="#app2" style="text-decoration: none;">
+        <div class="app-icon">
+          <img src="/api/placeholder/60/60" alt="App Icon">
+        </div>
+        <div class="app-name">app name</div>
+        <div class="app-price">FREE</div>
+      </a>
+    </div>
+    
+    <!-- App 3 -->
+    <div class="app">
+      <a href="#app3" style="text-decoration: none;">
+        <div class="app-icon">
+          <img src="/api/placeholder/60/60" alt="App Icon">
+        </div>
+        <div class="app-name">app name</div>
+        <div class="app-price">FREE</div>
+      </a>
+    </div>
+    
+    <!-- App 4 -->
+    <div class="app">
+      <a href="#app4" style="text-decoration: none;">
+        <div class="app-icon">
+          <img src="/api/placeholder/60/60" alt="App Icon">
+        </div>
+        <div class="app-name">app name</div>
+        <div class="app-price">FREE</div>
+      </a>
+    </div>
+    
+    <!-- App 5 -->
+    <div class="app">
+      <a href="#app5" style="text-decoration: none;">
+        <div class="app-icon">
+          <img src="/api/placeholder/60/60" alt="App Icon">
+        </div>
+        <div class="app-name">app name</div>
+        <div class="app-price">FREE</div>
+      </a>
+    </div>
+    
+    <!-- App 6 -->
+    <div class="app">
+      <a href="#app6" style="text-decoration: none;">
+        <div class="app-icon">
+          <img src="/api/placeholder/60/60" alt="App Icon">
+        </div>
+        <div class="app-name">app name</div>
+        <div class="app-price">FREE</div>
+      </a>
+    </div>
+    
+    <!-- App 7 -->
+    <div class="app">
+      <a href="#app7" style="text-decoration: none;">
+        <div class="app-icon">
+          <img src="/api/placeholder/60/60" alt="App Icon">
+        </div>
+        <div class="app-name">app name</div>
+        <div class="app-price">FREE</div>
+      </a>
+    </div>
+    
+    <!-- App 8 -->
+    <div class="app">
+      <a href="#app8" style="text-decoration: none;">
+        <div class="app-icon">
+          <img src="/api/placeholder/60/60" alt="App Icon">
+        </div>
+        <div class="app-name">app name</div>
+        <div class="app-price">FREE</div>
+      </a>
+    </div>
+    
+    <!-- App 9 -->
+    <div class="app">
+      <a href="#app9" style="text-decoration: none;">
+        <div class="app-icon">
+          <img src="/api/placeholder/60/60" alt="App Icon">
+        </div>
+        <div class="app-name">app name</div>
+        <div class="app-price">FREE</div>
+      </a>
+    </div>
+    
+    <!-- App 10 -->
+    <div class="app">
+      <a href="#app10" style="text-decoration: none;">
+        <div class="app-icon">
+          <img src="/api/placeholder/60/60" alt="App Icon">
+        </div>
+        <div class="app-name">app name</div>
+        <div class="app-price">FREE</div>
+      </a>
+    </div>
+  </div>
+  
+  <h2 class="section-title">Popular</h2>
+  <div class="app-row">
+    <!-- App 11 -->
+    <div class="app">
+      <a href="#app11" style="text-decoration: none;">
+        <div class="app-icon">
+          <img src="/api/placeholder/60/60" alt="App Icon">
+        </div>
+        <div class="app-name">popular app</div>
+        <div class="app-price">FREE</div>
+      </a>
+    </div>
+    
+    <!-- App 12 -->
+    <div class="app">
+      <a href="#app12" style="text-decoration: none;">
+        <div class="app-icon">
+          <img src="/api/placeholder/60/60" alt="App Icon">
+        </div>
+        <div class="app-name">popular app</div>
+        <div class="app-price">FREE</div>
+      </a>
+    </div>
+    
+    <!-- App 13 -->
+    <div class="app">
+      <a href="#app13" style="text-decoration: none;">
+        <div class="app-icon">
+          <img src="/api/placeholder/60/60" alt="App Icon">
+        </div>
+        <div class="app-name">popular app</div>
+        <div class="app-price">FREE</div>
+      </a>
+    </div>
+    
+    <!-- App 14 -->
+    <div class="app">
+      <a href="#app14" style="text-decoration: none;">
+        <div class="app-icon">
+          <img src="/api/placeholder/60/60" alt="App Icon">
+        </div>
+        <div class="app-name">popular app</div>
+        <div class="app-price">FREE</div>
+      </a>
+    </div>
+    
+    <!-- App 15 -->
+    <div class="app">
+      <a href="#app15" style="text-decoration: none;">
+        <div class="app-icon">
+          <img src="/api/placeholder/60/60" alt="App Icon">
+        </div>
+        <div class="app-name">popular app</div>
+        <div class="app-price">FREE</div>
+      </a>
+    </div>
+    
+    <!-- App 16 -->
+    <div class="app">
+      <a href="#app16" style="text-decoration: none;">
+        <div class="app-icon">
+          <img src="/api/placeholder/60/60" alt="App Icon">
+        </div>
+        <div class="app-name">popular app</div>
+        <div class="app-price">FREE</div>
+      </a>
+    </div>
+    
+    <!-- App 17 -->
+    <div class="app">
+      <a href="#app17" style="text-decoration: none;">
+        <div class="app-icon">
+          <img src="/api/placeholder/60/60" alt="App Icon">
+        </div>
+        <div class="app-name">popular app</div>
+        <div class="app-price">FREE</div>
+      </a>
+    </div>
+    
+    <!-- App 18 -->
+    <div class="app">
+      <a href="#app18" style="text-decoration: none;">
+        <div class="app-icon">
+          <img src="/api/placeholder/60/60" alt="App Icon">
+        </div>
+        <div class="app-name">popular app</div>
+        <div class="app-price">FREE</div>
+      </a>
+    </div>
+    
+    <!-- App 19 -->
+    <div class="app">
+      <a href="#app19" style="text-decoration: none;">
+        <div class="app-icon">
+          <img src="/api/placeholder/60/60" alt="App Icon">
+        </div>
+        <div class="app-name">popular app</div>
+        <div class="app-price">FREE</div>
+      </a>
+    </div>
+    
+    <!-- App 20 -->
+    <div class="app">
+      <a href="#app20" style="text-decoration: none;">
+        <div class="app-icon">
+          <img src="/api/placeholder/60/60" alt="App Icon">
+        </div>
+        <div class="app-name">popular app</div>
+        <div class="app-price">FREE</div>
+      </a>
+    </div>
+  </div>
+  
+  <div class="nav-bar">
+    <a href="#apps" class="apps-button">
+      <div class="apps-icon">
+        <img src="/api/placeholder/30/30" alt="Apps Icon">
+      </div>
+      <div class="apps-label">Apps</div>
+    </a>
+  </div>
+  
+  <!-- Add padding at the bottom to account for the fixed navbar -->
+  <div style="height: 60px;"></div>
+</body>
+</html>
