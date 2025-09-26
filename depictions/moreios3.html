@@ -8,40 +8,25 @@
     <meta name="format-detection" content="telephone=no">
   <title>appstar</title>
 <style>
-	body {
-    	width: 100vw;
-    	margin: 0;
-    	font-family: Helvetica, Arial;
-    	-webkit-text-size-adjust: none;
-    	-webkit-touch-callout: none;
-    	-webkit-user-select: none;
-	}
-
-	.panel-wrapper {
-	    width: 320px;
-	    margin: 0 auto;
-	}
-
-	.navbar {
-	    position: fixed;
-	    top: 0;
-	    left: 0;
-	    width: 100vw;
-	    height: 44px;
-	    background: url("http://app.star.is/files/images/stripe.png");	
-	    border-bottom: 1px solid #49586B;
-	    font-size: 17px;
-	    font-weight: bold;
-	    color: white;
-	    text-align: center;
-	    display: flex;          
-	    justify-content: center;
-	    align-items: center;
-	    z-index: 9999;
-	    text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
-	    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.2);
-	}
-
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 44px;
+    background: url("http://app.star.is/files/images/stripe.png");
+    border-bottom: 1px solid #49586B;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    z-index: 9999;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
 </style>
 </head>
 <body class="pinstripe" style="overflow-x:hidden">
@@ -49,7 +34,6 @@
 	<label>⠀</label>
 	<div></div>
 	<label>⠀</label>
-<div class="panel-wrapper">
 	<panel>
 		</a> 
 		<label>iPhoneOS 3 Apps</label>
@@ -137,6 +121,5 @@
 			<p> Although you'll lose multitasking :/
 		</block>
 	</panel>
-</div>
 </body>
 </html>
