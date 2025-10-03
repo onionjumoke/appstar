@@ -1,207 +1,45 @@
 <html>
-<head>
-  <link rel="stylesheet" href="./ipadstyles.css">
+    <head>
+          <link rel="stylesheet" href="./styles.css">
     <meta name="theme-color" content="#000000">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="telephone=yes">
   <title>appstar</title>
-<style>
+  <style>
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     height: 44px;
-    background: url("http://app.star.is/files/images/stripeipad.png");
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAArCAIAAAA2QHWOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAFBhaW50Lk5FVCA1LjEuOWxu2j4AAAC2ZVhJZklJKgAIAAAABQAaAQUAAQAAAEoAAAAbAQUAAQAAAFIAAAAoAQMAAQAAAAMAAAAxAQIAEAAAAFoAAABphwQAAQAAAGoAAAAAAAAAo5MAAOgDAACjkwAA6AMAAFBhaW50Lk5FVCA1LjEuOQADAACQBwAEAAAAMDIzMAGgAwABAAAAAQAAAAWgBAABAAAAlAAAAAAAAAACAAEAAgAEAAAAUjk4AAIABwAEAAAAMDEwMAAAAABdUNkYj53BAQAAAFBJREFUGFddjrEKgEAMQ0P//9ccnR0c3NyVszVpOe64ISR5hVBs+2HndRsQ5kF5efSccjK3b+706sq6Y+Juz9tyYwi1ufSexfXD4PTs5MrAD/RWcOgUg6x4AAAAAElFTkSuQmCC);
     border-bottom: 1px solid #49586B;
     font-size: 17px;
     font-weight: bold;
-    color: #717880;
+    color: white;
     text-align: center;
     display: -webkit-box;
     -webkit-box-align: center;
     -webkit-box-pack: center;
     z-index: 9999;
-    text-shadow: 0 1px 0 rgba(255,255,255,1);
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
     -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.2);
 }
 </style>
-<script type="text/javascript">
-function setupStandaloneLinks() {
-  var links = document.getElementsByTagName("a");
-
-  for (var i = 0; i < links.length; i++) {
-    (function(link) {
-      link.onclick = function(e) {
-        var href = link.getAttribute("href");
-
-        if (!href || link.className.indexOf("external") !== -1) {
-          return true; 
-        }
-
-        window.location = href;
-        return false;
-      };
-    })(links[i]);
-  }
-}
-
-window.onload = setupStandaloneLinks;
-</script>
-</head>
-<body class="pinstripe" style="overflow-x:hidden">
-    <div class="navbar">appstar 0.3 - DEMO!!!</div>
+    </head>
+    <body class="pinstripe" style="overflow-x:hidden">
+        <div class="navbar">appstar - oops!</div>
 	<label>⠀</label>
 	<div></div>
 	<label>⠀</label>
-		<panel>
-			</a> 
-			<fieldset style="background-color: #fcc">
-				<div>
-					<p><strong><center>Warning!</center></strong>
-
-					</p>
-				</div>
-				<div>
-					<p>You'll need the appstar tweak to download and install .ipa files</p>
-				</div>
-				<a href="cydia://url/http://cydia.saurik.com/api/share#?source=http://repo.us.to/">
-					<div>
-						<div>
-							<label>Get it here</label>
-						</div>
-					</div>
-				</a>
-			</fieldset>
-			<label>iPhoneOS 3 Apps</label>
-			<fieldset>
-				<a href="./files/ipa/ios3/itapvnc.ipa">
-					<img class="icon" src="./files/images/itapvnc.png" />
-					<div>
-						<div>
-							<label>iTapVNC</label>
-						</div>
-					</div>
-				</a>
-				<a href="./files/ipa/ios3/operamini.ipa">
-					<img class="icon" src="./files/images/operamini.png" />
-					<div>
-						<div>
-							<label>Opera Mini</label>
-						</div>
-					</div>
-				</a>
-				<a href="/files/ipa/ios3/issh.ipa">
-					<img class="icon" src="./files/images/issh.png" />
-					<div>
-						<div>
-							<label>iSSH</label>
-						</div>
-					</div>
-				</a>
-				<a href="./depictions/moreios3ipad.html">
-					<img class="icon" src="./files/images/more.png" />
-					<div>
-						<div>
-							<label>Show More</label>
-						</div>
-					</div>
-				</a>
-			</fieldset>
-			<label style="font-size:xx-small">.</label>
-			<label>iOS 4 Apps (armv6)</label>
-			<fieldset>
-				<a href="./files/ipa/ios4/vncviewer.ipa">
-					<img class="icon" src="./files/images/vncviewer.png">
-					<div>
-						<div>
-							<label>VNC Viewer</label>
-						</div>
-					</div>
-				</a>
-				<a href="./files/ipa/ios4/keynote.ipa">
-					<img class="icon" src="./files/images/keynote.png">
-					<div>
-						<div>
-							<label>Apple Keynote</label>
-						</div>
-					</div>
-				</a>
-				<a href="./files/ipa/ios4/pages.ipa">
-					<img class="icon" src="./files/images/pages.png">
-					<div>
-						<div>
-							<label>Apple Pages</label>
-						</div>
-					</div>
-				</a>
-				<a href="./depictions/moreios4armv6ipad.html">
-					<img class="icon" src="./files/images/more.png">
-					<div>
-						<div>
-							<label>Show More</label>
-						</div>
-					</div>
-				</a>
-			</fieldset>
-			<label style="font-size:xx-small">.</label>
-			<label>iOS 4 Apps (armv7)</label>
-			<fieldset>
-				<a href="./files/ipa/ios4/REPLACE.ipa">
-					<img class="icon" src="./files/images/REPLACE.png">
-					<div>
-						<div>
-							<label>app name</label>
-						</div>
-					</div>
-				</a>
-				<a href="./files/ipa/ios4/REPLACE.ipa">
-					<img class="icon" src="./files/images/REPLACE.png">
-					<div>
-						<div>
-							<label>app name</label>
-						</div>
-					</div>
-				</a>
-				<a href="./files/ipa/ios4/REPLACE.ipa">
-					<img class="icon" src="./files/images/REPLACE.png">
-					<div>
-						<div>
-							<label>app name</label>
-						</div>
-					</div>
-				</a>
-				<a href="./depictions/moreios4armv7ipad.html">
-					<img class="icon" src="./files/images/more.png">
-					<div>
-						<div>
-							<label>Show More</label>
-						</div>
-					</div>
-				</a>
-			</fieldset>
-			<label style="font-size:xx-small">.</label>
-			<label>More Links</label>
-			<fieldset style="background-color: rgb(255, 2556, 255,05)">
-				<a href="http://onionjumoke.us.to">
-					<img class="icon" src="./files/images/oj.png">
-					<div>
-						<div>
-							<label>onionjumoke.us.to</label>
-						</div>
-					</div>
-				</a>
-				<a href="http://mtmdev.org/webapp/">
-					<img class="icon" src="./files/images/mtm.png">
-					<div>
-						<div>
-							<label>Momentum Store (iOS 5+)</label>
-						</div>
-					</div>
-				</a>
-			</fieldset>
-	</panel>
-</body>	
+	<panel>
+        <block>
+            <div>
+                <p>Sorry but making pad versions for EVERY SINGLE html gets a bit frustrating after a while, so i deleted everything related ipad versions, my bad.</p>
+            </div>
+        </block>
+    </panel>
+    </body>
 </html>
