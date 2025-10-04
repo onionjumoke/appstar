@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../styles.css">
+    <meta name="theme-color" content="#000000">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=320, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="HandheldFriendly" content="true">
+    <title>Demo</title>
+    <style>
+        video {
+            border-radius: 5px;
+            -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+        }
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 44px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAArCAIAAAA2QHWOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAAAYdEVYdFNvZnR3YXJlAFBhaW50Lk5FVCA1LjEuOWxu2j4AAAC2ZVhJZklJKgAIAAAABQAaAQUAAQAAAEoAAAAbAQUAAQAAAFIAAAAoAQMAAQAAAAIAAAAxAQIAEAAAAFoAAABphwQAAQAAAGoAAAAAAAAA8nYBAOgDAADydgEA6AMAAFBhaW50Lk5FVCA1LjEuOQADAACQBwAEAAAAMDIzMAGgAwABAAAAAQAAAAWgBAABAAAAlAAAAAAAAAACAAEAAgAEAAAAUjk4AAIABwAEAAAAMDEwMAAAAAArIfcnPEIHlAAAADpJREFUGFetigsKADAIQq27d84O0m8U29gBJgj6FCLCqsoRwWbG7j4+PTMvO/xlnftXVbNtBiLCVwELflc/jphkLEYAAAAASUVORK5CYII);
+    border-bottom: 1px solid #525252;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    z-index: 9999;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+    </style>
+<script type="text/javascript">
+function setupStandaloneLinks() {
+  var links = document.getElementsByTagName("a");
+
+  for (var i = 0; i < links.length; i++) {
+    (function(link) {
+      link.onclick = function(e) {
+        var href = link.getAttribute("href");
+
+        if (!href || link.className.indexOf("external") !== -1) {
+          return true; 
+        }
+
+        window.location = href;
+        return false;
+      };
+    })(links[i]);
+  }
+}
+
+window.onload = setupStandaloneLinks;
+</script>
+</head>
+<body style="background-color:#2c2c2c;">
+	<div class="navbar">appstar - Demo</div>
+	<label>⠀</label>
+	<div></div>
+	<label>⠀</label>
+	<panel>
+        <fieldset>
+            <div>
+                <img style="float: left" src="../../files/images/more.png" alt="Demo">
+                <p style="text-align: right;font-size:x-large;">Demo</p>
+                <p style="text-align: right;font-size:small;color:#a7a7a7;line-height:25%;">Testing</p>
+                <p style="text-align: right;line-height:75%;">Test for depictions</p>
+            </div>
+        </fieldset>
+        <block>
+            <p style="text-align:center"><span style="color:#ffc014;">★★☆★★</span><span style="color:#ff9914;font-size:small;"> (1)</span></p>
+        </block>
+        <fieldset>
+            <div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, ullam.</p>
+            </div>
+        </fieldset>
+        <block>
+                <p>helo</p>
+            </div>
+        </block>
+        <fieldset>
+            <a href="../../index.html">
+            <img class="icon" src="../../files/images/dl.png">
+                <div>
+                    <div>
+                        <label>Get it</label>
+                    </div>
+                </div>
+            </a>
+        </fieldset>
+                <fieldset>
+            <a href="../moreios3.html">
+            <img class="icon" src="../../files/images/back.png">
+                <div>
+                    <div>
+                        <label>Go Back</label>
+                    </div>
+                </div>
+            </a>
+        </fieldset>
+        </panel>
+</body>
+</html>
