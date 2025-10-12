@@ -1,0 +1,132 @@
+<html>
+<head>
+  <link rel="stylesheet" href="./styles.css">
+    <meta name="theme-color" content="#000000">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=yes">
+  <title>appstar</title>
+<style>
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 44px;
+    background: url("http://app.star.is/files/images/stripe.png");
+    border-bottom: 1px solid #49586B;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    z-index: 9999;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+</style>
+<script type="text/javascript">
+function setupStandaloneLinks() {
+  var links = document.getElementsByTagName("a");
+
+  for (var i = 0; i < links.length; i++) {
+    (function(link) {
+      link.onclick = function(e) {
+        var href = link.getAttribute("href");
+
+        if (!href || link.className.indexOf("external") !== -1) {
+          return true; 
+        }
+
+        window.location = href;
+        return false;
+      };
+    })(links[i]);
+  }
+}
+
+window.onload = setupStandaloneLinks;
+</script>
+</head>
+<body class="pinstripe" style="overflow-x:hidden">
+	<div class="navbar">appstar 0.3 - DEMO!!!</div>
+	<label>⠀</label>
+	<div></div>
+	<label>⠀</label>
+	<panel>
+		</a> 
+		<label>iOS 4 Apps (armv6 compatible)</label>
+		<label>iWork set</label>
+		<fieldset>
+			<a href="./ios4armv6/keynote.html">
+				<img class="icon" src="../files/images/keynote.png" />
+				<div>
+					<div>
+						<label>Apple Keynote</label>
+					</div>
+				</div>
+			</a>
+			<a href="./ios4armv6/pages.html">
+				<img class="icon" src="../files/images/pages.png" />
+				<div>
+					<div>
+						<label>Apple Pages</label>
+					</div>
+				</div>
+			</a>
+			<a href="./ios4armv6/numbers.html">
+				<img class="icon" src="../files/images/numbers.png" />
+				<div>
+					<div>
+						<label>Apple Numbers</label>
+					</div>
+				</div>
+			</a>
+		</fieldset>
+		<label>Regular, non-Apple apps for peasants.</label>
+		<fieldset>
+			<a href="./ios4armv6/ibooks.html">
+				<img class="icon" src="../files/images/ibooks.png" />
+				<div>
+					<div>
+						<label>Apple iBooks</label>
+					</div>
+				</div>
+			</a>
+			<a href="./ios4armv6/vncviewer.html">
+				<img class="icon" src="../files/images/vncviewer.png" />
+				<div>
+					<div>
+						<label>VNC Viewer</label>
+					</div>
+				</div>
+			</a>
+			<a href="./ios4armv6/minebuilder.html">
+				<img class="icon" src="../files/images/minebuilder.png" />
+				<div>
+					<div>
+						<label>Minebuilder</label>
+					</div>
+				</div>
+			</a>
+		</fieldset>
+		<fieldset>
+			<a href="../index.html">
+				<img class="icon" src="http://app.star.is/files/images/back.png" />
+				<div>
+					<div>
+						<label>Back</label>
+					</div>
+				</div>
+			</a>
+		</fieldset>
+		<label>Note</label>
+		<block>
+			<p>These apps are compatible with armv7 devices (i.e. devices that support iOS 4.3 and up)</p>
+		</block>
+	</panel>
+</body>
+</html>
